@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventager</title>
+
+    <!-- Include Common Files -->
+    <!-- STYLESHEETS -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="login-signup.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <!-- Bootstrap -->
+</head>
+<body>
+
+<!-- NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top color-dark">
+    <div id="navbar-container" class="container-fluid">
+        <!-- Navbar Brand Heading -->
+        <a id="navbar-brand" class="h1" href="/">
+            <i class="fa fa-calendar"></i>
+            Eventager
+        </a>
+        <!-- Menu Button for Small Screens -->
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- Navbar Menu (same as Collapse Menu also) -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <!-- EVENTS Dropdown -->
+                <li class="nav-item dropdown">
+                    <!-- Dropdown -->
+                    <a class="nav-link dropdown-toggle" href="#" id="eventsDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Events
+                    </a>
+                    <!-- Dropdown Menu -->
+                    <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+                        <a class="dropdown-item" href="#">Trending Events</a>
+                        <a class="dropdown-item" href="#">Recent Events</a>
+                        <a class="dropdown-item" href="/events/show">All Events</a>
+                    </div>
+                </li>
+
+                <!-- Login/Signup or Hi, User! -->
+                <!-- Display Login/Signup if not logged in -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/loginsignup">Login/SignUp</a>
+                </li>
+                <!-- Display User Dropdown if Logged in -->
+            </ul>
+        </div>
+        <!-- END Navbar Menu -->
+    </div>
+</nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8 m-4 login-block pb-4">
+                <div class="row pb-3">
+                    <div class="col-sm-6 text-center" id="login-btn">
+                        <h4>LogIn</h4>
+                    </div>
+                    <div class="col-sm-6 text-center  bg-white" id="signup-btn">
+                        <h4>SignUp</h4>
+                    </div>
+                    <!--<button id="no-margin" class="pb-3 text-center"><b>LogIn</b></button>-->
+                </div>
+                <form action="/login" method="post" id="login-menu">
+                    <div>
+                        <div class="form-group inner-addon left-addon">
+                            <i class="fa fa-user inc-size"></i>
+                            <input class="form-control inc-size" type="text" name="username" placeholder="Username">
+                        </div>
+                        <div class="form-group inner-addon left-addon">
+                            <i class="fa fa-key"></i>
+                            <input class="form-control" type="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <a href="https://google.com" class="form-text text-muted">Forgot Password?</a>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg mx-auto">Login</button>
+                        </div>
+                    </div>
+                </form>
+                <form action="/signup" method="post" id="signup-menu" class="hide ">
+                    <div>
+                        <div class="form-group inner-addon left-addon">
+                            <i class="fa fa-user inc-size"></i>
+                            <input class="form-control inc-size" type="text" name="username" placeholder="Username of signup">
+                        </div>
+                        <div class="form-group inner-addon left-addon">
+                            <i class="fa fa-user inc-size"></i>
+                            <input class="form-control inc-size" type="text" name="username" placeholder="Username of signup">
+                        </div>
+                        <div class="form-group inner-addon left-addon">
+                            <i class="fa fa-key"></i>
+                            <input class="form-control" type="password" name="password" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <a href="https://google.com" class="form-text text-muted">Forgot Password?</a>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg mx-auto">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+    </div>
+
+<!--<form action="/signup" method="post">-->
+    <!--<label for="name">Name: </label>-->
+    <!--<input type="text" id="name" name="name">-->
+    <!--<label for="signup-username">Username: </label>-->
+    <!--<input type="text" id="signup-username" name="username">-->
+    <!--<label for="signup-password">Password: </label>-->
+    <!--<input type="password" id="signup-password" name="password">-->
+    <!--<label for="email">Email Address: </label>-->
+    <!--<input type="email" id="email" name="email">-->
+    <!--<label for="phno">Phone Number: </label>-->
+    <!--<input type="tel" id="phno" name="phoneNumber">-->
+    <!--<button>Sign Up!</button>-->
+<!--</form>-->
+
+<script src="login-signup.js"></script>
+</body>
+</html>
