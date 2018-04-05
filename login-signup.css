@@ -1,5 +1,21 @@
+.toggleBorder{
+    border-bottom: 2px solid #bbc2ca;
+    background-color: #e6e9ef;
+}
+.inputFields{
+    width: 70%;
+    margin: 0 auto;
+}
+.incSize{
+    font-size: 20px;
+}
+#signup-btn{
+    border-left: 2px solid #bbc2ca;
+}
+.borderOur{
+    border: 2px solid #bbc2ca;
+}
 .login-block{
-    background-color: #c2c9ca;
     border-radius: 4px;
 }
 .hide{
@@ -8,7 +24,6 @@
 #no-margin{
     margin-top: 0px;
 }
-
 .inner-addon {
     position: relative;
 }

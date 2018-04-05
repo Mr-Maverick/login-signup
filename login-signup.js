@@ -7,13 +7,14 @@ $(()=>{
     loginBtn.click(()=>{
         signupMenu.addClass('hide');
         loginMenu.removeClass('hide');
-        loginBtn.removeClass('bg-white');
-        signupBtn.addClass('bg-white');
+        loginBtn.removeClass('toggleBorder');
+        signupBtn.addClass('toggleBorder');
     })
     signupBtn.click(()=>{
         loginMenu.addClass('hide');
         signupMenu.removeClass('hide');
-        signupBtn.removeClass('bg-white');
-        loginBtn.addClass('bg-white');
+        signupBtn.removeClass('toggleBorder');
+        loginBtn.addClass('toggleBorder');
+
     })
 });

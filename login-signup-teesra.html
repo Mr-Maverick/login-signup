@@ -73,28 +73,29 @@
 </nav>
 
 
+  
     <div class="container">
         <div class="row">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-8 m-4 login-block pb-4">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 m-4 login-block borderOur bothBox">
                 <div class="row pb-3">
                     <div class="col-sm-6 text-center" id="login-btn">
-                        <h4>LogIn</h4>
+                        <h4 class="p-3 incSize">Login</h4>
                     </div>
-                    <div class="col-sm-6 text-center  bg-white" id="signup-btn">
-                        <h4>SignUp</h4>
+                    <div class="col-sm-6 text-center toggleBorder" id="signup-btn">
+                        <h4 class="p-3 incSize">Sign Up</h4>
                     </div>
                     <!--<button id="no-margin" class="pb-3 text-center"><b>LogIn</b></button>-->
                 </div>
                 <form action="/login" method="post" id="login-menu">
-                    <div>
+                    <div class="p-5">
                         <div class="form-group inner-addon left-addon">
-                            <i class="fa fa-user inc-size"></i>
-                            <input class="form-control inc-size" type="text" name="username" placeholder="Username">
+                            <i class="fa fa-user"></i>
+                            <input class="form-control inputFields" type="text" name="username" placeholder="Username">
                         </div>
                         <div class="form-group inner-addon left-addon">
                             <i class="fa fa-key"></i>
-                            <input class="form-control" type="password" name="password" placeholder="Password">
+                            <input class="form-control  inputFields" type="password" name="password" placeholder="Password">
                         </div>
                         <div class="form-group">
                             <a href="https://google.com" class="form-text text-muted">Forgot Password?</a>
@@ -105,10 +106,10 @@
                     </div>
                 </form>
                 <form action="/signup" method="post" id="signup-menu" class="hide ">
-                    <div>
+                    <div class="p-5">
                         <div class="form-group inner-addon left-addon">
-                            <i class="fa fa-user inc-size"></i>
-                            <input class="form-control inc-size" type="text" name="username" placeholder="Username of signup">
+                            <i class="fa fa-user"></i>
+                            <input class="form-control" type="text" name="username" placeholder="Username of signup">
                         </div>
                         <div class="form-group inner-addon left-addon">
                             <i class="fa fa-user inc-size"></i>
@@ -127,7 +128,7 @@
                     </div>
                 </form>
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-sm-3"></div>
         </div>
     </div>
 
